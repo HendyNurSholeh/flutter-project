@@ -14,11 +14,28 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Hendy, world!'),
+          title: Text('Hendy Nur Sholeh, world!'),
         ),
         body: Center(
-          child: Text('Hello, world!'),
+          child: Heading(text: 'TodoList App'),
         ),
+      ),
+    );
+  }
+}
+
+class Heading extends StatelessWidget {
+  final String text;
+
+  const Heading({Key? key, required this.text}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context){
+    return Text(
+      text,
+      style: const TextStyle(
+        fontSize: 24.0,
+        fontWeight: FontWeight.bold,
       ),
     );
   }
