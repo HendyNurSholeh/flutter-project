@@ -52,8 +52,8 @@ class FirstScreen extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         color: Colors.blue[600],
         alignment: Alignment.center,
-        transform: Matrix4.rotationZ(0),
-        child: Text('..',
+        transform: Matrix4.rotationZ(0.1),
+        child: Text('Love uu Sayangg Hendy',
             style: Theme.of(context)
                 .textTheme
                 .headlineMedium!
